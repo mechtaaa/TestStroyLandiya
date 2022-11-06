@@ -28,6 +28,7 @@ public class ItemPage {
                 Allure.addAttachment("Цена", whitePriceItem.getText());
             Allure.addAttachment("Количество товара", scoreItem.getValue());
         } else {
+            Allure.addAttachment("Наименование товара", nameItem.getText());
             Allure.addAttachment("Наличие в продаже", "Товар временно отсутствует в продаже");
         }
     }

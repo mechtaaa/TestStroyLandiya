@@ -38,6 +38,7 @@ public class CategoryPage {
         filterPrice.get(1).shouldBe(Condition.disabled).shouldBe(Condition.enabled).sendKeys(Keys.chord(Keys.CONTROL, "a"));
         filterPrice.get(1).shouldBe(Condition.visible).sendKeys(Keys.BACK_SPACE);
         filterPrice.get(1).shouldBe(Condition.visible).sendKeys("1000");
+        filterPrice.get(1).shouldBe(Condition.disabled).shouldBe(Condition.enabled);
         Allure.addAttachment("Название фильтра", "Цена");
         Allure.addAttachment("Количество товаров", countElements.getText());
     }

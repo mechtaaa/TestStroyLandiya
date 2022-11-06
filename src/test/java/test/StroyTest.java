@@ -1,4 +1,10 @@
+package test;
+
 import org.testng.annotations.Test;
+import pages.BasePage;
+import pages.CategoryPage;
+import pages.ItemPage;
+import pages.MenuPage;
 
 import static com.codeborne.selenide.Selenide.back;
 
